@@ -1,0 +1,77 @@
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed');
+
+/* Equivalente a 
+<link href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed" rel="stylesheet"> 
+nell'HTML
+*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #E3E2DF;
+}
+
+h1 {
+    font-family: Roboto, Arial, sans-serif;
+    text-align: center;
+    margin: 2em;
+    line-height: 1.5em;
+    font-size: 2.5em;
+}
+
+p.image {text-align: center;}
+
+p.premessa {
+    width: 60%;
+    font-style: italic;
+    margin: auto;
+    text-indent: 0;
+    line-height: 1.5em;
+}
+
+img {
+    width: 50%;
+    box-shadow: 2px 2px 10px grey;
+}
+
+article {
+    width: 60%;
+    margin: auto;
+    margin-top: 50px;
+    line-height: 1.5em;
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 30px;
+    box-shadow: 2px 2px 10px grey;
+}
+
+article h2::first-letter {
+    color: #9A1750;
+    font-size: 2em;
+    vertical-align: -0.15em;
+    margin-right: 8px;
+}
+
+article h2 {
+    font-family: 'Roboto Condensed', Arial, sans-serif;
+    text-align: left;
+    margin-top, margin-bottom: 1em;
+    font-weight: normal;
+    font-size: 2em;
+    margin-bottom: 40px;
+}
+
+article a:link {color: #900; text-decoration: none;}
+article a:visited {color: #900}
+article a:active {color: orange}
+article a:hover {color: #900; text-decoration: underline}
+
+p.sottotitolo {font-style: italic}
+
+p.credits {
+    text-transform: ;
+    text-align: center;
+    margin: 40px		    
+}
+

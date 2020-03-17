@@ -1,0 +1,272 @@
+@import url('https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Proza+Libre&display=swap');
+
+:root {
+  --clr-background: #fffaf2;
+  --clr-primary: #ffc042;
+  --clr-text: #020100;
+  --clr-daccent: #d89000;
+  --clr-laccent: #b7ad99;
+  --ff-head: 'Cormorant Garamond', serif;
+  --ff-body: 'Proza Libre', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Cormorant Garamond', 'Proza Libre';
+  background-color: var(--clr-background);
+  font-size: 1em;
+  line-height: 1.5em;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 50%;
+}
+
+/* Typography */
+h1, h2 {
+  font-family: var(--ff-head);
+  font-weight: normal;
+  color: var(--clr-text);
+}
+
+p, a {
+  font-family: var(--ff-body);
+  font-weight: normal;
+  color: var(--clr-text);
+}
+
+/* Links */
+a {
+  color: var(--clr-daccent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--clr-primary);
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  overflow: hidden;
+  padding: 50px;
+}
+
+img.main {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  line-height: 1.1em;
+  font-size: 4.209em;
+  position: relative;
+  padding-bottom: 30px;
+  border-bottom: 3px solid var(--clr-text);
+}
+
+p.premessa {
+  text-align: center;
+  font-size: 1.333em;
+  line-height: 1.5em;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+}
+
+/* Articles */
+article {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article:nth-child(2) {
+  background: url("../img/a1.jpg");
+  background-size: cover;
+}
+
+article:nth-child(3) {
+  background: url("../img/a2.jpg");
+  background-size: cover;
+}
+
+article:nth-child(4) {
+  background: url("../img/a5.jpg");
+  background-size: cover;
+}
+
+article:nth-child(5) {
+  background: url("../img/a3.jpg");
+  background-size: cover;
+}
+
+article:nth-child(6) {
+  background: url("../img/a4.jpg");
+  background-size: cover;
+}
+
+article:nth-child(7) {
+  background: url("../img/a6.jpg");
+  background-size: cover;
+}
+
+article:nth-child(8) {
+  background: url("../img/a7.jpg");
+  background-size: cover;
+}
+
+article:nth-child(9) {
+  background: url("../img/a8.jpg");
+  background-size: cover;
+}
+
+article:nth-child(10) {
+  background: url("../img/a9.jpg");
+  background-size: cover;
+}
+
+article:nth-child(7) .card {
+  width: 80%;
+}
+
+article:nth-child(8) .card {
+  width: 70%;
+}
+
+/* Cards */
+div.card {
+  width: 60%;
+  background-color: var(--clr-background);
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+}
+
+.card h2 {
+  font-size: 2.369em;
+  font-weight: 500;
+  line-height: 1.1em;
+  text-align: center;
+}
+
+.card h2::first-letter {
+  color: var(--clr-daccent);
+  font-size: 2em;
+  vertical-align: -0.05em;
+  margin-right: 5px;
+}
+
+.card p {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.7em;
+}
+
+p.sottotitolo {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 1.333em;
+  font-weight: 500;
+  color: var(--clr-daccent);
+}
+
+.card p img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer */
+footer {
+  background: var(--clr-daccent);
+  width: 100vw;
+  height: 20vh;
+  margin-top: -16px;
+  text-align: center;
+}
+
+footer p {
+  padding-top: 5vh;
+  color: var(--clr-background);
+  font-weight: normal;
+}
+
+footer p a {
+  color: var(--clr-text)
+}
+
+@media screen and (max-width: 934px) {
+  img {
+    width: 50%;
+  }
+
+  container {
+    width: 100%;
+    height: auto;
+  }
+
+  h1 {
+    text-align: center;
+    line-height: 1.1em;
+    font-size: 2.369em;
+    padding-bottom: 20px;
+    border-bottom: 3px solid var(--clr-text);
+  }
+
+  .container {
+    width: 70%;
+    margin: auto;
+    margin-top: -20px;
+  }
+
+  p.premessa {
+    text-align: center;
+    padding: 0;
+    font-size: 1em;
+    line-height: 1.5em;
+    letter-spacing: 0.1em;
+    font-weight: normal;
+  }
+
+  article {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10vh 0vh 10vh 0vh;
+  }
+
+  div.card {
+    flex-grow: 1;
+    width: 50%;
+    margin-bottom: 50vh 0vh 50vh 0vh;
+    flex-wrap: wrap;
+  }
+
+  article:nth-child(7) .card {
+    font-size: 0.75em;
+  }
+
+  article:nth-child(8) .card {
+    font-size: 0.75em;
+    width: 100%;
+  }
+}
