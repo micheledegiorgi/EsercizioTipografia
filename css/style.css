@@ -212,7 +212,7 @@ footer p a {
 }
 
 /* Media queries */
-@media screen and (max-width: 934px) {
+@media only screen and (max-width: 934px) {
   img {
     width: 50%;
   }
